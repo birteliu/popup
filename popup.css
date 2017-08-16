@@ -29,6 +29,7 @@ a {
 }
 
 
+
 /**/
 
 #popup {
@@ -45,8 +46,8 @@ a {
 }
 
 .popup-close {
-    color: #ffffff;
-    position: fixed;
+    color: #000000;
+    position: absolute;
     z-index: 999;
     top: 5%;
     right: 5%;
@@ -55,7 +56,7 @@ a {
 }
 
 .popup-close:hover {
-    color: #FFAF00;
+    color: #7F7F7F;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -63,6 +64,7 @@ a {
 
 .whitebox {
     display: table;
+    position: relative;
     width: 70%;
     max-width: 600px;
     margin: 100px auto 0;
