@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: "蘋方-繁", "微軟正黑體", "sans-serif";
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+}
+
+
+/**/
+
+#popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    background: rgba(0, 0, 0, .7);
+    overflow: scroll;
+    padding-bottom: 50px;
+}
+
+.popup-close {
+    color: #ffffff;
+    position: fixed;
+    z-index: 999;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.popup-close:hover {
+    color: #FFAF00;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+.whitebox {
+    display: table;
+    width: 70%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    background: #fff;
+    box-shadow: #000 0 0 20px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.whitebox img {
+    width: 130px;
+    display: block;
+    margin: auto;
+}
+
+.whitebox {
+    text-align: center;
+}
+
+.news-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+    padding: 10px 0;
+}
+
+.whitebox p {
+    text-align: center;
+    line-height: 2;
+}
+
+.go {
+    width: 40%;
+    min-width: 150px;
+    padding: 20px;
+    background-color: #FFAF00;
+    margin-top: 25px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.go:hover {
+    background-color: #E59C00;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}

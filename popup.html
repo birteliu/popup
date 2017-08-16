@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="popup.css" media="screen">
+    <script src="jquery-3.0.0.min.js"></script>
+    
+    <script type='text/javascript'>
+    // $(function() {
+    //     $(window).load(function() {
+    //         if (window.localStorage && !localStorage['faded']) {
+    //             localStorage['faded'] = true;
+    //             $(".popup").fadeIn('slow')
+    //         }
+    //     });
+    //     $(".popup-close").click(function() {
+    //         $(".popup").fadeOut('fast')
+    //     })
+    // });
+    
+    $(function() {
+        $(window).scroll(function() {
+            if ($(document).scrollTop() <= 300) {
+                $("#popup").fadeIn('slow')
+            }
+        });
+        $(".popup-close").click(function() {
+            $("#popup").fadeOut('fast')
+        })
+    });
+    </script>
+</head>
+
+<body>
+    <div style="height: 1000px;"></div>
+    <div id="popup">
+        <span class="popup-close">X</span>
+        <div class="whitebox">
+            <img src="boy.png" alt="">
+            <div class="news-title">Webduino 學習手冊</div>
+            <p>Webduino 最完整的教學網站上線囉，本篇文章已經有新的版本，趕快點選最新『 Blockly 程式積木 』前往閱讀吧。如果您想知道還提供了哪些新教材，可以前往：Webduino 學習手冊了解更多資訊。</p>
+            <a href="http://tutorials.webduino.io/" target="_blank" class="go">立即前往</a>
+        </div>
+    </div>
+</body>
+
+</html>
